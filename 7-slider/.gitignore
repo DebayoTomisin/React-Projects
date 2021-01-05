@@ -12,7 +12,8 @@
 /build
 
 # misc
-./../5-menu/.eslintcache
+/.env
+/.eslintcache
 .DS_Store
 .env.local
 .env.development.local
