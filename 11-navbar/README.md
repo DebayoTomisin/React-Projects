@@ -1,1 +1,2 @@
-Nothing to see here folks, just a simple navbar project
+Nothing to see here folks, just a simple navbar project. 
+So the idea behind this project was the use of useRef to store a reference of a dom properties of an object and modified the styling of the object on cetain conditions.

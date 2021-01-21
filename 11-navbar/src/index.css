@@ -183,7 +183,7 @@ nav {
 }
 .links-container {
   height: 0;
-  overflow: hidden;
+  overflow: hidden; 
   transition: var(--transition);
 }
 .show-container {
