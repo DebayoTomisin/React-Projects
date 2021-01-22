@@ -1,0 +1,1 @@
+Nothing to see here, just a simple modal and side bar with react, here we explore how to use context api and useContext to manage how state is being updated and passed to UI components that need them for rendering in the DOM.
