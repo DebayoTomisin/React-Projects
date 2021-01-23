@@ -1,11 +1,14 @@
 import logo from './logo192.png';
-import './App.css';
+import Home from "./components/Home"
+import SideBar from "./components/Sidebar"
+import Modal from './components/Modal';
 
 function App() {
   return (
     <>
-      <img src={logo} alt="logo"/>
-      <h1>This is getting heavy can you hear the bass boom i'm ready</h1>
+      <Home/>
+      <Modal/>
+      <SideBar/>
     </>
   );
 }
