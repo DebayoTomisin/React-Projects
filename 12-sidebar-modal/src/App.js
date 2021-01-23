@@ -1,4 +1,4 @@
-import logo from './logo192.png';
+import React from "react"
 import Home from "./components/Home"
 import SideBar from "./components/Sidebar"
 import Modal from './components/Modal';
