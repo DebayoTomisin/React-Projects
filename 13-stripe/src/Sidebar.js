@@ -1,9 +1,13 @@
 import React from "react"
-import {useGlobalContext} from "./context"
+import { FaTimes } from 'react-icons/fa'
+import sublinks from './data'
+import { useGlobalContext } from "./context";
+
 
 function Sidebar(){
+  const { closeSidebar, isSidebarOpen} = useGlobalContext()
   return(
-    <h2>Sidebar Component</h2>
+    <aside></aside>
   )
 }
 
