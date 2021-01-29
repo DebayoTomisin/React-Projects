@@ -10,7 +10,7 @@ function Hero(){
       <div className="hero-center">
         <article className="hero-info">
         <h1>
-            Payments infrastructure <br />
+            Payments Infrastructure <br />
             for the internet
           </h1>
           <p>
