@@ -6,7 +6,7 @@ function Hero(){
   const {closeSubmenu} = useGlobalContext()
   
   return(
-    <section className="hero">
+    <section className="hero" onMouseOver={closeSubmenu}>
       <div className="hero-center">
         <article className="hero-info">
         <h1>
@@ -21,7 +21,7 @@ function Hero(){
           <button className="btn">Start Now</button>
         </article>
         <article className="hero-images">
-          <img src={PhoneImg} alt="image" className="phone-img"/>
+        <img src={PhoneImg} className='phone-img' alt='phone' />
         </article>
       </div>
     </section>
