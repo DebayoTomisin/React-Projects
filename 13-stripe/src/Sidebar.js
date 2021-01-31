@@ -7,7 +7,7 @@ import { useGlobalContext } from "./context";
 function Sidebar(){
   const { closeSidebar, isSidebarOpen} = useGlobalContext()
   return(
-    <aside className={`${isSidebarOpen ? "sidebar-wrapper-show": "sidebar-wrapper"}`}>
+    <aside className={`${isSidebarOpen ? 'sidebar-wrapper show': "sidebar-wrapper"}`}>
       <div className="sidebar">
         <button className="close-btn" onClick={closeSidebar}>
           <FaTimes/>
@@ -23,7 +23,10 @@ function Sidebar(){
                     {links.map((link, index) => {
                       const {url, icon, label} = link
                       return(
-                        <a href={url}>{label}{icon}</a>
+                        <a key ={index} href={url}>
+                          {label} 
+                          {icon}
+                        </a>
                       )
                     })}
                   </div>

@@ -4,7 +4,7 @@ import {useGlobalContext} from "./context"
 import Hero from "./Hero"
 import Sidebar from "./Sidebar"
 import Navbar from "./Navbar"
-import Sidemenu from "./Sidemenu"
+import Submenu from "./Submenu"
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Sidebar/>
-      <Sidemenu/>
+      <Submenu/>
     </>
   );
 }
