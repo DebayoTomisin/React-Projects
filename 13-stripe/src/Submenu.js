@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef }from "react"
 import {useGlobalContext} from "./context"
 
 function Submenu() {
-  const {isSubmenuOpen,  location, page: { page, links }} = useGlobalContext()
+  const {isSubMenuOpen,  location, page: { page, links }} = useGlobalContext()
 
   const container = useRef(null)
 
@@ -25,7 +25,7 @@ function Submenu() {
   }, [ page, location, links])
 
   return(
-    <aside className={`${isSubmenuOpen ? "submenu show": "submenu"}`} ref={container}>
+    <aside className={`${isSubMenuOpen ? "submenu": "submenu show"}`} ref={container}>
       <section>
         <h4>Page</h4>
         <div className= {`submenu-center ${columns}`}>

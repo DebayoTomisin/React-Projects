@@ -5,7 +5,7 @@ import logo from './images/logo.svg'
 import { FaBars } from "react-icons/fa"
 
 function Navbar() {
-  const {openSidebar, openSubmenu, closeSubmenu} = useGlobalContext()
+  const {openSidebar, openSubmenu, closeSubMenu} = useGlobalContext()
 
   const displaySubmenu = (e) =>{
     const page = e.target.textContent
@@ -18,7 +18,7 @@ function Navbar() {
   const handleSubmenu= (e) => {
     if(!e.target.classList.contains("link-btn")) {
       console.log("close")
-      closeSubmenu()
+      closeSubMenu()
     }
   }
 
