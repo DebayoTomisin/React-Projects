@@ -18,6 +18,7 @@ function Navbar() {
   const handleSubmenu= (e) => {
     if(!e.target.classList.contains("link-btn")) {
       console.log("close")
+      closeSubmenu()
     }
   }
 
