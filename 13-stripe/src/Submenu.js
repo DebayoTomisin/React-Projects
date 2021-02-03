@@ -3,7 +3,7 @@ import {useGlobalContext} from "./context"
 
 function Submenu() {
   const {isSubMenuOpen,  location, page: { page, links }} = useGlobalContext()
-
+  
   const container = useRef(null)
 
   const [columns, setColumns] = useState('col-2')
@@ -14,8 +14,7 @@ function Submenu() {
     const {center, bottom} = location
     submenu.style.left = `${center}px`
     submenu.style.top = `${bottom}px`
-    console.log(links)
-
+    
     if(links.length === 3){
       setColumns('col-3')
     }
@@ -25,9 +24,9 @@ function Submenu() {
   }, [ page, location, links])
 
   return(
-    <aside className={`${isSubMenuOpen ? "submenu": "submenu show"}`} ref={container}>
+    <aside className={`${isSubMenuOpen ? "submenu show": "submenu"}`} ref={container}>
       <section>
-        <h4>Page</h4>
+        <h4>{page}</h4>
         <div className= {`submenu-center ${columns}`}>
           {links.map((link, index) => {
             const {label, url, icon} = link

@@ -15,9 +15,8 @@ function Navbar() {
     openSubmenu(page, { center, bottom }) 
   }
 
-  const handleSubmenu= (e) => {
+  const handleSubmenu = (e) => {
     if(!e.target.classList.contains("link-btn")) {
-      console.log("close")
       closeSubMenu()
     }
   }
