@@ -33,7 +33,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: "GET_TOTALS"})
-  }, [state.cart])
+  }, [state])
 
   return(
     <AppContext.Provider value= {{
@@ -48,7 +48,7 @@ const AppProvider = ({ children }) => {
   )
 }
 
-export const useGlobalContext  = () => {
+export const useGlobalContext = () => {
   return useContext(AppContext)
 }
 
