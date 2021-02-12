@@ -1,7 +1,11 @@
+import Navbar from "./Navbar"
+import Container from "./Container"
+
 function App() {
   return (
     <div className="App">
-      <h2>Hello there</h2>
+      <Navbar/>
+      <Container/>
     </div>
   );
 }
