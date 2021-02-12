@@ -36,6 +36,9 @@ const Container = () => {
             total <span>${total}</span>
           </h4>
         </div>
+        <button className="btn clear-btn" onClick= {() => console.log('clear cart')}>
+          clear cart
+        </button>
       </footer>
     </section>
   )
