@@ -33,6 +33,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     console.log(state.cart)
+    dispatch({type : "GET_TOTALS"})
   }, [state.cart])
 
   
