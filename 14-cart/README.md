@@ -1,0 +1,1 @@
+Nothing to see here, just a simple cart project combining context and reducers, there is still a minor bug, when the firts item is removed from the cart, the second item is also removed. I'll debug that and come back to edit this
