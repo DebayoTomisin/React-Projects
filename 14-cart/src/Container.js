@@ -7,8 +7,8 @@ import { useGlobalContext } from "./context"
 const Container = () => {
 
   const {cart, total, clearCart} = useGlobalContext()
-  console.log(cart)
-  
+ 
+    
   if ( cart.length === 0){
     return <section className="cart">
       <header>
@@ -18,7 +18,27 @@ const Container = () => {
     </section>
   }
 
-  return <h1>Container</h1>
+  return(
+    <section className="cart">
+      <header>
+        <h2>Your bag</h2>
+      </header>
+
+      <div>
+        {cart.map(item => <CartItem {...item} key={item.id}/>)}
+      </div>
+
+      <footer>
+        <hr/>
+        <div className="cart-total">
+          <h4> total <span>${total}</span></h4>
+        </div>
+        <button className="btn clear-btn" onClick={clearCart}>clear cart</button>
+      </footer>
+    </section>
+    
+  )
+  
 }
 
 export default Container
