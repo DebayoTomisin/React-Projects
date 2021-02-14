@@ -31,6 +31,10 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "DECREASE", payload: id })
   }
 
+  useEffect(() => {
+    console.log(state.cart)
+  }, [state.cart])
+
   
   return(
     <AppContext.Provider value= {{
