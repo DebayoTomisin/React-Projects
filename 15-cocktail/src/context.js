@@ -12,12 +12,32 @@ const AppProvider = ({children}) => {
     const fetchCocktails = async () => {
         setLoading(true)
         try {
+            setLoading(false)
             const response = await fetch(`${url}${searchTerm}`);
             const data =  await response.json()
             const {drinks} = data
             console.log(drinks)
-            if(drinks){
 
+            if(drinks){
+               
+                const newCocktails = drinks.map( item => {
+                    const {
+                        idDrink,
+                        strAlcoholic,
+                        strGlass,
+                        strDrink,
+                        strDrinkThumb,
+                    } = item
+                    return{
+                        id: idDrink,
+                        info: strAlcoholic,
+                        name: strDrink,
+                        glass: strGlass,
+                        image: strDrinkThumb
+                    }
+                })
+                setCocktails(newCocktails)
+                
             }
             else{
                 setLoading(false)
