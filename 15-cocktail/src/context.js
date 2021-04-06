@@ -35,14 +35,14 @@ const AppProvider = ({children}) => {
     }, [searchTerm, fetchCocktails])
 
     return(
-        <AppContext 
+        <AppContext.Provider 
             value={{
                 loading, 
                 setSearchTerm,
                 cocktails,
             }}>
             {children}
-        </AppContext>
+        </AppContext.Provider>
     )
 }
 
