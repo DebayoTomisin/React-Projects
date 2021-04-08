@@ -1,2 +1,2 @@
-Nothing to see here, just a couple of react projects to solidify the knowledge i've gained learing react!
-Feel free to take a closer look. Special thanks to coding addict for the guidiance
+Nothing to see here, This repo is meant to host all the react based projects i'll be undertaking. 
+None of the projects here will be deployed so yeah. 
